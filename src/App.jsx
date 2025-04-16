@@ -1,13 +1,16 @@
-import projects from "./data/projects.json"
+import About from "./sections/About"
 import ProjectSection from "./sections/ProjectsSection"
+
 
 
 export const App = () => {
   return (
     <>
-      <h2>hej</h2>
+      <About />
       <ProjectSection/>
      
     </>
   )
 }
+
+
