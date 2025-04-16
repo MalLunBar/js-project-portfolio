@@ -10,6 +10,7 @@ export const App = () => {
       <About />
       <TechStack />
       <ProjectSection />
+      <Skills />
 
 
     </>
