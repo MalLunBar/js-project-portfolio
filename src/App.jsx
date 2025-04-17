@@ -3,6 +3,7 @@ import TechStack from "./sections/TechStack"
 import ProjectSection from "./sections/ProjectsSection"
 import Skills from "./sections/Skills"
 import Blog from "./sections/Blog"
+import Contact from "./sections/Contact"
 
 
 
@@ -14,6 +15,7 @@ export const App = () => {
       <ProjectSection />
       <Skills />
       <Blog />
+      <Contact />
 
 
     </>
