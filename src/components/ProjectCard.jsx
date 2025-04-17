@@ -1,10 +1,16 @@
 import "./ProjectCard.css"
 import Button from "./Button"
-const ProjectCard = ({ image, name, description, text, netlify, github }) => {
+import Tag from "./Tag"
+
+const ProjectCard = ({ image, tags, name, description, text, netlify, github }) => {
   return (
     <article>
       <img src={image} alt="blaha" />
-      <p>{text}</p>
+      <div className="tag-wrapper">
+        {tags.map((tag, index) => (
+          <Tag key={tag} label={tag} />
+        ))}
+      </div>
       <h2>{name}</h2>
       <p>{description}</p>
       <Button label="Live Demo" url={netlify} />

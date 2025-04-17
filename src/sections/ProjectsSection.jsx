@@ -15,7 +15,7 @@ const ProjectSection = () => {
             image={project.image}
             name={project.name}
             description={project.description}
-            text={project.tags.join(", ")}
+            tags={project.tags}
             netlify={project.netlify}
             github={project.github}
 
