@@ -1,9 +1,10 @@
 // import "./TechStack.css"
+import Heading from "../typography/Headings"
 
 const TechStack = () => {
   return (
     <>
-      <h2>Tech</h2>
+      <Heading title="Tech" />
       <p>HTML, CSS, Flexbox, JavaScript, ES6,
         JSX, React, React Hooks, Node.js,
         Mongo DB, Java, Python, Web Accessibility, APIs,

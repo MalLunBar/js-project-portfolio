@@ -1,9 +1,9 @@
 //tag between skills and text
-
+import Heading from "../typography/Headings"
 const Skills = () => {
   return (
     <>
-      <h2>Skills</h2>
+      <Heading title="Skills"/>
       
     </>
   )
