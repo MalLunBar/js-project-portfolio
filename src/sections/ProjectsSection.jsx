@@ -1,11 +1,13 @@
 import "./ProjectSection.css"
 import projects from "../data/projects.json"
 import ProjectCard from "../components/ProjectCard"
+import Heading from "../typography/Headings"
 
 
 const ProjectSection = () => {
   return (
     <>
+      <Heading title="Featured Projects" />
       {projects.projects.map((project) => {
         return (
           <ProjectCard

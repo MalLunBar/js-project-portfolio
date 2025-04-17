@@ -1,9 +1,9 @@
 
 
-const Heading = ({ children }) => {
+const Heading = ({ title }) => {
   return (
     <h2 className="section-heading">
-      {children}
+      {title}
     </h2>
   )
 }

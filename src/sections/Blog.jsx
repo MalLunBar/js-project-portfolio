@@ -4,7 +4,7 @@ import BlogCard from "../components/BlogCard";
 const Blog = () => {
   return (
     <>
-      <Heading/>
+      <Heading title="My Words" />
       <BlogCard />
       <BlogCard />
       <BlogCard />

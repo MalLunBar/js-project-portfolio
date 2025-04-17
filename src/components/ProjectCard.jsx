@@ -9,8 +9,6 @@ const ProjectCard = ({ image, name, description, text, netlify, github }) => {
       <p>{description}</p>
       <Button label="Live Demo" url={netlify} />
       <Button label="View Code" url={github} />
-
-
     </article>
   )
 }
