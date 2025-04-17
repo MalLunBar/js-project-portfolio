@@ -16,7 +16,7 @@ const ProjectSection = () => {
             text={project.tags.join(", ")}
             netlify={project.netlify}
             github={project.github}
-            
+
           />
         )
       })}
