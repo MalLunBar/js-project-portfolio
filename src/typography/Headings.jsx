@@ -1,10 +1,17 @@
+import styled from "styled-components"
 
+
+const HeadingStyled = styled.h2`
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+`
 
 const Heading = ({ title }) => {
   return (
-    <h2 className="section-heading">
+    <HeadingStyled>
       {title}
-    </h2>
+    </HeadingStyled>
   )
 }
 

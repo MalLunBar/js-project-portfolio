@@ -1,3 +1,4 @@
+import GlobalStyle from "./GlobalStyle"
 import About from "./sections/About"
 import TechStack from "./sections/TechStack"
 import ProjectSection from "./sections/ProjectsSection"
@@ -10,12 +11,14 @@ import Contact from "./sections/Contact"
 export const App = () => {
   return (
     <>
-      <About />
-      <TechStack />
-      <ProjectSection />
-      <Skills />
-      <Blog />
-      <Contact />
+      <GlobalStyle />
+        <About />
+        <TechStack />
+        <ProjectSection />
+        <Skills />
+        <Blog />
+        <Contact />
+      
 
 
     </>
