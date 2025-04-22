@@ -3,6 +3,7 @@ import projects from "../data/projects.json"
 import ProjectCard from "../components/ProjectCard"
 import Heading from "../typography/Headings"
 import StyledSection from "./StyledSection"
+import HeadingMedium from "../typography/HeadingsMedium"
 
 
 const ProjectSection = () => {
@@ -14,7 +15,7 @@ const ProjectSection = () => {
           <ProjectCard
             key={project.name}
             image={project.image}
-            name={project.name}
+            name={<HeadingMedium title={project.name}/>}
             description={project.description}
             tags={project.tags}
             netlify={project.netlify}

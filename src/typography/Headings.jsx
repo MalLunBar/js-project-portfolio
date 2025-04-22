@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const HeadingStyled = styled.h2`
   text-align: center;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
 `
 
