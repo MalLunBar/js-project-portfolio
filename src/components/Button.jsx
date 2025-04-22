@@ -12,12 +12,14 @@ const ButtonStyled = styled.a`
  display: flex;
  gap: 16px; 
  align-items: center;
+ text-decoration: none;
 
 `
 
 const IconStyled = styled.img`
   width: 31px;
   height: 31px;
+  background-color: black; 
 `
 
 

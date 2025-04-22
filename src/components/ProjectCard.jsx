@@ -13,8 +13,8 @@ const ProjectCard = ({ image, tags, name, description, text, netlify, github }) 
       </div>
       <h2>{name}</h2>
       <p>{description}</p>
-      <Button icon="assets/Icon-Web.svg" label="Live Demo" url={netlify} />
-      <Button label="View Code" url={github} />
+      <Button icon="/assets/globe-icon.svg" label="Live Demo" url={netlify} />
+      <Button icon="/assets/github.svg" label="View Code" url={github} />
     </article>
   )
 }
