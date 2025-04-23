@@ -1,13 +1,15 @@
 import Heading from "../typography/Headings"
-import HeadingMedium from "../typography/HeadingsMedium"
 import StyledSection from "./StyledSection"
 import styled from "styled-components"
 import { lightTheme, darkTheme } from "../theme"
 import IconLink from "../components/IconLink"
+import Paragraph from "../typography/Paragraphs"
 
 const ContactSectionStyle = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
   gap: 64px;
 `
 
@@ -22,6 +24,23 @@ const ContactImgStyle = styled.img`
   border-radius: 50%;
 
 `
+const IconContainer = styled.div`
+  display: flex; 
+  justify-content: center;
+  gap: 32px;
+`
+
+const ParagraphContainer = styled.div`
+  display: flex; 
+  flex-direction: column;
+  gap: 8px;
+  width: 270px;
+  justify-content: center;
+  align-items: flex-start;
+
+  
+
+`
 
 
 const ContactSection = () => {
@@ -32,19 +51,20 @@ const ContactSection = () => {
         <ImgContainerStyle>
           <ContactImgStyle src="/assets/contact-pic.webp" alt="" />
         </ImgContainerStyle>
-        <div>
-          <HeadingMedium title="Malin Lundgren" />
-          <HeadingMedium title="+46(0)737060052" />
-          <HeadingMedium title="malinelundgren1991" />
-        </div>
-        <div>
-          <IconLink src="/assets/linkedin-icon.svg" url="https://www.linkedin.com/in/malin-elisabeth-lundgren/" />
-          <IconLink src="/assets/github.svg" url="https://github.com/MalLunBar/js-project-business-site" />
-          <IconLink src="/assets/instagram-icon.svg" url="https://www.instagram.com/malin_e_lundgren/" />
-        </div>
+        <ParagraphContainer>
+          <Paragraph text="Malin Lundgren" />
+          <Paragraph text="+46(0)737060052" />
+          <Paragraph text="malinelundgren1991@gmail.com" />
+        </ParagraphContainer>
+        <IconContainer>
+          <IconLink icon="/assets/linkedin-icon.svg" url="https://www.linkedin.com/in/malin-elisabeth-lundgren/" />
+          <IconLink icon="/assets/github.svg" url="https://github.com/MalLunBar/js-project-business-site" />
+          <IconLink icon="/assets/instagram-icon.svg" url="https://www.instagram.com/malin_e_lundgren/" />
+        </IconContainer>
       </ContactSectionStyle>
     </StyledSection>
   )
 }
+
 
 export default ContactSection

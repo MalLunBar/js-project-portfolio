@@ -6,7 +6,7 @@ const IconStyled = styled.img`
   width: 32px;
   height: 32px;
   background-color: black; 
-  object-fit: cover;  
+  
 `
 
 
