@@ -1,10 +1,10 @@
 import StyledSection from "./StyledSection"
-
+import HeadingMedium from "../typography/HeadingsMedium"
 const About = () => {
   return (
 
     <StyledSection>
-      <p>Hi There, I'm</p>
+      <HeadingMedium title="Hi There, I'm" />
       <h1>Malin Lundgren</h1>
       <img src="/assets/profile-pic.png" alt="" />
       <h2>Curious Frontend Developer</h2>
