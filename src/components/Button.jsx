@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import IconLink from "./IconLink"
 
 
 const ButtonStyled = styled.a`
@@ -16,20 +17,13 @@ const ButtonStyled = styled.a`
 
 `
 
-const IconStyled = styled.img`
-  width: 31px;
-  height: 31px;
-  background-color: black; 
-`
-
-
 const Button = ({ icon, label, url }) => {
   return (
     <ButtonStyled href={url} target="_blank" rel="noopener noreferrer">
-      {icon && <IconStyled src={icon} alt="" />}
+      <IconLink icon={icon} url={url} />
       {label}
     </ButtonStyled>
   )
-
 }
+
 export default Button 
