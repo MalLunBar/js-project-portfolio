@@ -4,6 +4,7 @@ import skills from "../data/skills.json"
 import SkillCard from "../components/SkillCard"
 import styled from "styled-components"
 import StyledSection from "./StyledSection"
+import { lightTheme, darkTheme } from "../theme"
 
 const SkillStyle = styled.div`
   display: flex;
@@ -12,7 +13,7 @@ const SkillStyle = styled.div`
 `
 const SkillsSection = () => {
   return (
-    <StyledSection>
+    <StyledSection theme={darkTheme}>
       <Heading title="Skills" />
       <SkillStyle>
         {skills.skills.map((skill) => {
@@ -21,6 +22,7 @@ const SkillsSection = () => {
               key={skill.name}
               name={skill.name}
               skills={skill.skills}
+              theme={darkTheme}
             />
           )
         }

@@ -12,13 +12,13 @@ export const App = () => {
   return (
     <>
       <GlobalStyle />
-      <About />
-      <TechStack />
-      <ProjectSection />
-      <SkillsSection />
-      <Blog />
-      <Contact />
-
+        <About />
+        <TechStack />
+        <ProjectSection />
+        <SkillsSection />
+        <Blog />
+        <Contact />
+      
 
 
     </>

@@ -1,6 +1,7 @@
 import Tag from "./Tag"
 import styled from "styled-components"
 
+
 const SkillCardStyle = styled.div`
  display: flex;
  flex-direction: column;
@@ -8,13 +9,15 @@ const SkillCardStyle = styled.div`
 
 `
 
-const SkillCard = ({ name, skills }) => {
+const SkillCard = ({ name, skills, theme }) => {
   return (
     <SkillCardStyle>
-      <Tag label={name} />
+      <Tag 
+        label={name} 
+        theme={theme} />
       <div>
         {skills.map((skill) => (
-        <p key={skill}>{skill}</p>
+          <p key={skill}>{skill}</p>
         ))}
       </div>
 
