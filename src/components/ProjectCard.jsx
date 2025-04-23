@@ -1,8 +1,9 @@
-import "./ProjectCard.css"
+
 import Button from "./Button"
 import Tag from "./Tag"
 import HeadingMedium from "../typography/HeadingsMedium"
 import styled from "styled-components"
+import Paragraph from "../typography/Paragraphs"
 
 
 const ProjectCardStyle = styled.article`
@@ -23,15 +24,29 @@ const TagContainerStyle = styled.div`
 const ButtonContainerStyle = styled.div`
   display: flex; 
   flex-direction: column; 
-  gap: 8px; 
+  gap: 8px;  
+  align-items: flex-start;
+  align-self: stretch;
+`
+const ImgContainerStyle = styled.div`
+  width: 100%; 
+  height: 479px;
+  align-self: stretch;
+  
+`
+const CardImage = styled.img`
+  width: 100%;
+  height: 497px;
+  object-fit: cover;
+  border-radius: 12px;
 `
 
 const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
   return (
     <ProjectCardStyle>
-      <div>
-        <img src={image} alt="blaha" />
-      </div>
+      <ImgContainerStyle>
+        <CardImage src={image} alt="" />
+      </ImgContainerStyle>
 
       <CardTextStyle>
         <TagContainerStyle>
@@ -40,7 +55,7 @@ const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
           ))}
         </TagContainerStyle>
         <HeadingMedium title={name} />
-        <p>{description}</p>
+        <Paragraph text={description} />
       </CardTextStyle>
 
       <ButtonContainerStyle>
