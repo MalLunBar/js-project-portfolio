@@ -5,7 +5,7 @@ import ProjectSection from "./sections/ProjectsSection"
 import SkillsSection from "./sections/SkillsSection"
 import Blog from "./sections/Blog"
 import ContactSection from "./sections/ContactSection"
-import FooterSection from "./sections/FooterSection"
+
 
 
 
@@ -20,7 +20,7 @@ export const App = () => {
         <SkillsSection />
         <Blog />
         <ContactSection />
-        <FooterSection />
+        
       
 
 

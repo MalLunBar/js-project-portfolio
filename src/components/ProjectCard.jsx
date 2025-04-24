@@ -55,7 +55,7 @@ const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
           ))}
         </TagContainerStyle>
         <HeadingMedium title={name} />
-        <Paragraph text={description} />
+        <Paragraph>{description}</Paragraph>
       </CardTextStyle>
 
       <ButtonContainerStyle>

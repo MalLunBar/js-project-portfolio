@@ -50,9 +50,9 @@ const ContactSection = () => {
           <ContactImgStyle src="/assets/contact-pic.webp" alt="" />
         </ImgContainerStyle>
         <ParagraphContainer>
-          <Paragraph text="Malin Lundgren" />
-          <Paragraph text="+46(0)737060052" />
-          <Paragraph text="malinelundgren1991@gmail.com" />
+          <Paragraph>Malin Lundgren</Paragraph>
+          <Paragraph>+46(0)737060052</Paragraph>
+          <Paragraph>malinelundgren1991@gmail.com</Paragraph>
         </ParagraphContainer>
         <IconContainer>
           <IconLink icon="/assets/linkedin-icon.svg" url="https://www.linkedin.com/in/malin-elisabeth-lundgren/" />
