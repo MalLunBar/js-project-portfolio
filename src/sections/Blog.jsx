@@ -1,5 +1,5 @@
 import StyledSection from "./StyledSection"
-import Heading from "../typography/Headings";
+import Heading from "../typography/Heading";
 import BlogCard from "../components/BlogCard";
 //Det finns inget BlogCard än så länge
 const Blog = () => {

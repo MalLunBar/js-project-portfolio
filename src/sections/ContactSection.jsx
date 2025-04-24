@@ -1,9 +1,9 @@
-import Heading from "../typography/Headings"
+import Heading from "../typography/Heading"
 import StyledSection from "./StyledSection"
 import styled from "styled-components"
 import { lightTheme, darkTheme } from "../theme"
 import IconLink from "../components/IconLink"
-import Paragraph from "../typography/Paragraphs"
+import { Paragraph } from "../typography/Paragraphs"
 
 const ContactSectionStyle = styled.div`
   display: flex;
@@ -37,8 +37,6 @@ const ParagraphContainer = styled.div`
   width: 270px;
   justify-content: center;
   align-items: flex-start;
-
-  
 
 `
 

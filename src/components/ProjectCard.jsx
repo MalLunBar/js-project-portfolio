@@ -1,9 +1,9 @@
 
 import Button from "./Button"
 import Tag from "./Tag"
-import HeadingMedium from "../typography/HeadingsMedium"
+import { HeadingMedium } from "../typography/HeadingsMedium"
 import styled from "styled-components"
-import Paragraph from "../typography/Paragraphs"
+import { Paragraph } from "../typography/Paragraphs"
 
 
 const ProjectCardStyle = styled.article`

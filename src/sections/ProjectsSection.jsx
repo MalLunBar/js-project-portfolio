@@ -1,7 +1,7 @@
-import "./ProjectSection.css"
+
 import projects from "../data/projects.json"
 import ProjectCard from "../components/ProjectCard"
-import Heading from "../typography/Headings"
+import Heading from "../typography/Heading"
 import StyledSection from "./StyledSection"
 
 

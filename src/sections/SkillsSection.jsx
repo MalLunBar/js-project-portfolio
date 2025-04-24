@@ -1,5 +1,5 @@
 //tag between skills and text
-import Heading from "../typography/Headings"
+import Heading from "../typography/Heading"
 import skills from "../data/skills.json"
 import SkillCard from "../components/SkillCard"
 import styled from "styled-components"
@@ -29,7 +29,7 @@ const SkillsSection = () => {
         )}
       </SkillStyle>
 
-    
+
     </StyledSection>
   )
 }

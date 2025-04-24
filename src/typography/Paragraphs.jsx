@@ -4,13 +4,25 @@ const ParagraphStyle = styled.p`
   font-size: 16px;
   font-weight: 400;
 `
+const CenteredParagraphStyle = styled(ParagraphStyle)`
+  text-align: center;
+`
 
-const Paragraph = ({ text }) => {
+export const Paragraph = ({ children }) => {
   return (
     <ParagraphStyle>
-      {text}
+      {children}
     </ParagraphStyle>
   )
 }
 
-export default Paragraph
+export const CenteredParagraph = ({ text }) => {
+  return (
+    <CenteredParagraphStyle>
+      {text}
+    </CenteredParagraphStyle>
+
+  )
+}
+
+

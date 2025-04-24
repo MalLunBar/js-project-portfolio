@@ -6,7 +6,7 @@ const HeadingMedStyled = styled.h3`
   font-weight: 500;
 `
 
-const HeadingMedium = ({ title }) => {
+export const HeadingMedium = ({ title }) => {
   return (
     <HeadingMedStyled>
       {title}
@@ -14,4 +14,27 @@ const HeadingMedium = ({ title }) => {
   )
 }
 
-export default HeadingMedium
+const CenteredHeadingMedStyled = styled(HeadingMedStyled)`
+  text-align: center; 
+`
+
+export const CenteredHeadingMedium = ({ title }) => {
+  return (
+    <CenteredHeadingMedStyled>
+      {title}
+    </CenteredHeadingMedStyled>
+  )
+}
+
+const SmallerHeadingMedStyled = styled(CenteredHeadingMedStyled)`
+  font-size: 20px; 
+`
+export const SmallerHeadingMedium = ({ title }) => {
+  return (
+    <SmallerHeadingMedStyled>
+      {title}
+    </SmallerHeadingMedStyled>
+  )
+}
+
+
