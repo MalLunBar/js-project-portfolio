@@ -8,7 +8,6 @@ export const StyledSection = styled.section`
   padding: 64px 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
@@ -20,6 +19,7 @@ export const StyledSection = styled.section`
 
   @media ${media.tablet} {
     padding: 64px 24px;
+    align-items: center;
 
   }
 
