@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "name": "One",
+      "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
+      "image": "assets/purple.webp",
+      "tags": [
+        "DATE"
+      ],
+      "link": ""
+    },
+    {
+      "name": "Two",
+      "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
+      "image": "assets/blue.webp",
+      "tags": [
+        "DATE"
+      ],
+      "link": ""
+    }
+  ]
+}

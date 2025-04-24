@@ -8,13 +8,17 @@ const TagStyle = styled.span`
   padding: 2px 6px;
   justify-content: center;
   align-items: flex-start;
+  max-width: 142px;
   align-self: stretch;
   flex: 1 0 0;
   
 `
 
+const ExtendedTagStyle = styled(TagStyle)`
+  max-width: 177px; 
+`
 
-const Tag = ({ theme, label }) => {
+export const Tag = ({ theme, label }) => {
   return (
     <TagStyle theme={theme}>
       {label}
@@ -22,4 +26,13 @@ const Tag = ({ theme, label }) => {
   )
 }
 
-export default Tag
+
+export const ExtendedTag = ({ theme, label }) => {
+  return (
+    <ExtendedTagStyle theme={theme}>
+      {label}
+    </ExtendedTagStyle>
+  )
+}
+
+

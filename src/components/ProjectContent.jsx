@@ -1,4 +1,4 @@
-import Tag from "./Tag"
+import { Tag } from "./Tag"
 import { HeadingMedium } from "../typography/HeadingsMedium"
 import styled from "styled-components"
 import { Paragraph } from "../typography/Paragraphs"
@@ -19,8 +19,8 @@ export const ProjectContent = ({ tags, name, description }) => {
     <CardTextStyle>
       <TagContainerStyle>
         {tags.map((tag) => (
-          <Tag 
-            key={tag} 
+          <Tag
+            key={tag}
             label={tag} />
         ))}
       </TagContainerStyle>

@@ -12,6 +12,8 @@ const CardImage = styled.img`
   object-fit: cover;
   border-radius: 12px;
 `
+
+
 export const ProjectImage = ({ image }) => {
   return (
     <ImgContainerStyle>

@@ -1,4 +1,4 @@
-import Tag from "./Tag"
+import { ExtendedTag } from "./Tag"
 import styled from "styled-components"
 
 
@@ -12,8 +12,8 @@ const SkillCardStyle = styled.div`
 const SkillCard = ({ name, skills, theme }) => {
   return (
     <SkillCardStyle>
-      <Tag 
-        label={name} 
+      <ExtendedTag
+        label={name}
         theme={theme} />
       <div>
         {skills.map((skill) => (

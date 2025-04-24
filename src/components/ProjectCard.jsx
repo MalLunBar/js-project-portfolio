@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { ProjectImage } from "./ProjectImage"
 import { ProjectContent } from "./ProjectContent"
 
-const ProjectCardStyle = styled.article`
+export const ProjectCardStyle = styled.article`
   display: flex; 
   flex-direction: column; 
   gap: 32px; 
@@ -19,7 +19,7 @@ const ButtonContainerStyle = styled.div`
 `
 
 
-const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
+export const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
   return (
     <ProjectCardStyle>
       <ProjectImage image={image} />
@@ -42,4 +42,3 @@ const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
   )
 }
 
-export default ProjectCard
