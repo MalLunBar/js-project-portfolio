@@ -3,7 +3,6 @@ import { media } from "../media"
 
 
 
-
 export const StyledSection = styled.section`
   padding: 64px 16px;
   display: flex;
@@ -28,11 +27,17 @@ export const StyledSection = styled.section`
   }
 `
 
-export const ModifiedStyledSection = styled(StyledSection)`
+export const StyledCardSection = styled(StyledSection)`
+  gap: 64px;
+
+  @media ${media.tablet} {
+    
+  }
 
   @media ${media.desktop} {
-    padding: 128px 0px 64px 0px;
+    gap: 128px;
   }
+
 `
 
 

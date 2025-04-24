@@ -2,13 +2,13 @@
 import projects from "../data/projects.json"
 import ProjectCard from "../components/ProjectCard"
 import Heading from "../typography/Heading"
-import { StyledSection } from "./StyledSection"
+import { StyledCardSection } from "./StyledSection"
 
 
 
 const ProjectSection = () => {
   return (
-    <StyledSection>
+    <StyledCardSection>
       <Heading title="Featured Projects" />
       {projects.projects.map((project) => {
         return (
@@ -25,7 +25,7 @@ const ProjectSection = () => {
         )
       })}
 
-    </StyledSection>
+    </StyledCardSection>
   )
 }
 
