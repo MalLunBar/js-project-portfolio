@@ -2,7 +2,7 @@
 import Button from "./Button"
 import styled from "styled-components"
 import { ProjectImage } from "./ProjectImage"
-import { ProjectContent } from "./CardContent"
+import { CardContent } from "./CardContent"
 
 export const ProjectCardStyle = styled.article`
   display: flex; 
@@ -23,6 +23,7 @@ export const ProjectCard = ({ image, tags, name, description, netlify, github })
   return (
     <ProjectCardStyle>
       <ProjectImage image={image} />
+      
       <CardContent
         tags={tags}
         name={name}
