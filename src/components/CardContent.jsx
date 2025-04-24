@@ -14,7 +14,7 @@ const TagContainerStyle = styled.div`
   flex-wrap: wrap;
 `
 
-export const ProjectContent = ({ tags, name, description }) => {
+export const CardContent = ({ tags, name, description }) => {
   return (
     <CardTextStyle>
       <TagContainerStyle>

@@ -1,25 +1,32 @@
 import Button from "./Button"
 import styled from "styled-components"
-import { ProjectCardStyle } from "./ProjectCard"
-import { ProjectContent } from "./ProjectContent"
+import { CardContent } from "./CardContent"
 import { BlogImage } from "./BlogImage"
 
 
+const BlogCardStyle = styled.div`
+  display: flex; 
+  flex-direction: column; 
+  gap: 32px; 
+`
+
 const BlogCard = ({ image, tags, name, description, link }) => {
   return (
-    <ProjectCardStyle>
+    <BlogCardStyle>
       <BlogImage
         image={image}
-         />
-      <ProjectContent 
-        name={name}
-        tags={tags}
-        description={description} />
-      <Button
-        icon="./assets/globe-icon.svg"
-        label="Read article"
-        url={link} />
-    </ProjectCardStyle>
+      />
+      <div>
+        <CardContent
+          name={name}
+          tags={tags}
+          description={description} />
+        <Button
+          icon="./assets/globe-icon.svg"
+          label="Read article"
+          url={link} />
+      </div>
+    </BlogCardStyle>
   )
 }
 
