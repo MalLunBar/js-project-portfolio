@@ -20,10 +20,6 @@ export const App = () => {
         <SkillsSection />
         <Blog />
         <ContactSection />
-        
-      
-
-
     </>
   )
 }

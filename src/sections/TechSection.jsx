@@ -1,6 +1,6 @@
 
 import Heading from "../typography/Heading"
-import StyledSection from "./StyledSection"
+import { StyledSection } from "./StyledSection"
 import { CenteredParagraph } from "../typography/Paragraphs"
 import { lightTheme, darkTheme } from "../theme"
 

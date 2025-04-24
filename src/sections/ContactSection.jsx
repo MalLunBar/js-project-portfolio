@@ -1,5 +1,5 @@
 import Heading from "../typography/Heading"
-import StyledSection from "./StyledSection"
+import { StyledSection } from "./StyledSection"
 import styled from "styled-components"
 import { lightTheme, darkTheme } from "../theme"
 import IconLink from "../components/IconLink"

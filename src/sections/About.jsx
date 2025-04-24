@@ -1,4 +1,4 @@
-import StyledSection from "./StyledSection"
+import { ModifiedStyledSection } from "./StyledSection"
 import { CenteredHeadingMedium, SmallerHeadingMedium }from "../typography/HeadingsMedium"
 import LargeHeading from "../typography/LargeHeading"
 import { Paragraph } from "../typography/Paragraphs"
@@ -7,7 +7,7 @@ import { Paragraph } from "../typography/Paragraphs"
 const About = () => {
   return (
 
-    <StyledSection>
+    <ModifiedStyledSection>
       <CenteredHeadingMedium title="Hi There, I'm" />
       <LargeHeading title="Malin Lundgren" />
       <SmallerHeadingMedium title="Curious Frontend Developer"/>
@@ -19,7 +19,7 @@ const About = () => {
      
         My goal is to move into system-level or application development, where I can work on more complex logic and structures, not just visual interfaces."
       </Paragraph>
-    </StyledSection>
+    </ModifiedStyledSection>
 
   )
 }

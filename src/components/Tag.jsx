@@ -10,6 +10,7 @@ const TagStyle = styled.span`
   align-items: flex-start;
   align-self: stretch;
   flex: 1 0 0;
+  
 `
 
 

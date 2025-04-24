@@ -3,7 +3,7 @@ import Heading from "../typography/Heading"
 import skills from "../data/skills.json"
 import SkillCard from "../components/SkillCard"
 import styled from "styled-components"
-import StyledSection from "./StyledSection"
+import { StyledSection } from "./StyledSection"
 import { lightTheme, darkTheme } from "../theme"
 
 const SkillStyle = styled.div`

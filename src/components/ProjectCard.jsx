@@ -4,7 +4,7 @@ import Tag from "./Tag"
 import { HeadingMedium } from "../typography/HeadingsMedium"
 import styled from "styled-components"
 import { Paragraph } from "../typography/Paragraphs"
-
+import { ProjectImage } from "./ProjectImage"
 
 const ProjectCardStyle = styled.article`
   display: flex; 
@@ -28,26 +28,12 @@ const ButtonContainerStyle = styled.div`
   align-items: flex-start;
   align-self: stretch;
 `
-const ImgContainerStyle = styled.div`
-  width: 100%; 
-  height: 479px;
-  align-self: stretch;
-  
-`
-const CardImage = styled.img`
-  width: 100%;
-  height: 497px;
-  object-fit: cover;
-  border-radius: 12px;
-`
+
 
 const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
   return (
     <ProjectCardStyle>
-      <ImgContainerStyle>
-        <CardImage src={image} alt="" />
-      </ImgContainerStyle>
-
+      <ProjectImage image={image} />
       <CardTextStyle>
         <TagContainerStyle>
           {tags.map((tag) => (
