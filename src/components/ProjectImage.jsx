@@ -1,23 +1,19 @@
 import styled from "styled-components"
+import { media } from "../media"
 
-const ImgContainerStyle = styled.div`
-  width: 100%; 
-  height: 479px;
-  align-self: stretch;
-  
-`
 const CardImage = styled.img`
   width: 100%;
-  height: 497px;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
+
+  @media ${media.desktop} {
+    width: 479px;
+    height: 479px;  
+  }
+   
 `
 
-
 export const ProjectImage = ({ image }) => {
-  return (
-    <ImgContainerStyle>
-      <CardImage src={image} alt="" />
-    </ImgContainerStyle>
-  )
+  return <CardImage src={image} alt="" />
 }

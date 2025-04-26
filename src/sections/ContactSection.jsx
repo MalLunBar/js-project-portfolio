@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { lightTheme, darkTheme } from "../theme"
 import IconLink from "../components/IconLink"
 import { Paragraph } from "../typography/Paragraphs"
+import { media } from "../media"
 
 const ContactSectionStyle = styled.div`
   display: flex;
@@ -38,6 +39,9 @@ const ParagraphContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
 
+  @media ${media.tablet} {
+    text-align: center;
+  }
 `
 
 

@@ -6,7 +6,7 @@ const ButtonStyled = styled.a`
  background-color: black; 
  color: white; 
  border-radius: 12px;
- width: 100%; 
+ width: 303px; 
  height: 48px;
  font-size: 18px;
  padding: 16px; 

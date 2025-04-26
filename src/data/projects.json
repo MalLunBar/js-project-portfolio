@@ -55,7 +55,7 @@
     {
       "name": "Business Site",
       "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
-      "image": "assets/business.webp",
+      "image": "assets/business1.webp",
       "tags": [
         "HTML5",
         "CSS3",

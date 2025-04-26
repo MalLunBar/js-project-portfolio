@@ -36,6 +36,7 @@ export const StyledCardSection = styled(StyledSection)`
 
   @media ${media.desktop} {
     gap: 128px;
+    margin: 0 128px;
   }
 
 `

@@ -1,6 +1,6 @@
 import Button from "./Button"
 import styled from "styled-components"
-import { CardContent } from "./CardContent"
+import { CardTextContent } from "./CardTextContent"
 import { BlogImage } from "./BlogImage"
 import { media } from "../media"
 
@@ -8,7 +8,8 @@ import { media } from "../media"
 const BlogCardStyle = styled.div`
   display: flex; 
   flex-direction: column; 
-  gap: 32px; 
+  gap: 32px;
+  flex: 1 0 0;
 
   
   @media ${media.tablet} {
@@ -29,7 +30,7 @@ const BlogCard = ({ image, tags, name, description, link }) => {
         image={image}
       />
       <BlogCardTextStyle>
-        <CardContent
+        <CardTextContent
           name={name}
           tags={tags}
           description={description} />
