@@ -10,7 +10,7 @@ const ProjectSection = () => {
   return (
     <StyledCardSection>
       <Heading title="Featured Projects" />
-      {projects.projects.map((project) => {
+      {projects.projects.map((project, index) => {
         return (
           <ProjectCard
             key={project.name}
@@ -20,6 +20,7 @@ const ProjectSection = () => {
             tags={project.tags}
             netlify={project.netlify}
             github={project.github}
+            index={index}
 
           />
         )

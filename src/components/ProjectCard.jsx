@@ -15,7 +15,7 @@ export const ProjectCardStyle = styled.article`
   }
   
   @media ${media.desktop} {
-    flex-direction: row;
+    flex-direction: ${({ $reverse }) => ($reverse ? "row-reverse" : "row")};
     gap: 125px;
     align-items: center;
   }
@@ -35,9 +35,9 @@ const ButtonContainerStyle = styled.div`
 `
 
 
-export const ProjectCard = ({ image, tags, name, description, netlify, github }) => {
+export const ProjectCard = ({ image, tags, name, description, netlify, github, index }) => {
   return (
-    <ProjectCardStyle>
+    <ProjectCardStyle $reverse={index % 2 !== 0}>
       <ProjectImage image={image} />
       <CardContent>
         <CardTextContent
