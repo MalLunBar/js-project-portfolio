@@ -8,6 +8,7 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 16px;
+  
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
 
@@ -24,6 +25,7 @@ export const StyledSection = styled.section`
 
   @media ${media.desktop} {
     padding: 128px 0;
+    flex: 1 0 0;
   }
 `
 

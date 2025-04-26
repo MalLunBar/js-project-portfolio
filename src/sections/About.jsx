@@ -7,6 +7,10 @@ import styled from "styled-components"
 import { media } from "../media"
 
 export const TextContentStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
   @media ${media.tablet} {
     max-width: 696px;
     

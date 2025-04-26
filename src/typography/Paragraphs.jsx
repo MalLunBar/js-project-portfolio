@@ -10,6 +10,10 @@ const ParagraphStyle = styled.p`
     text-align: ${({ align }) => align === "left" ? "left" : "center"};
   
   }
+  
+  @media ${media.desktop} {
+    font-size: 18px;
+  }
 `
 
 
