@@ -4,12 +4,14 @@ import { media } from "../media";
 const BlogImgContainerStyle = styled.div`
   display: flex;
   flex-direction: column; 
-  
+
   width: 100%; 
   height: 200px;
   align-self: stretch;
 
   @media ${media.tablet} {
+    align-self: stretch;
+    height: 100%;
     width: 200px;
     
     
@@ -24,6 +26,8 @@ const BlogCardImage = styled.img`
 
   @media ${media.tablet} {
     width: 200px;
+    align-self: stretch;
+    height: 100%;
     
     
     
