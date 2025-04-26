@@ -6,7 +6,7 @@ import { StyledSection } from "./StyledSection"
 import styled from "styled-components"
 import { media } from "../media"
 
-const AboutTextContent = styled.div`
+export const TextContentStyle = styled.div`
   @media ${media.tablet} {
     max-width: 696px;
     
@@ -16,15 +16,27 @@ const AboutTextContent = styled.div`
     
   }
 `
+const ProfileImage = styled.img`
+  
 
-const About = () => {
+  @media ${media.tablet} {
+    max-width: 566px;
+    
+  }
+  @media ${media.desktop} {
+    max-width: 982px;
+    
+  }
+`
+
+export const About = () => {
   return (
 
     <StyledSection>
       <CenteredHeadingMedium title="Hi There, I'm" />
       <LargeHeading title="Malin Lundgren" />
-      <img src="/assets/profile-pic.png" alt="" />
-      <AboutTextContent>
+      <ProfileImage src="/assets/profile-pic.png" alt="" />
+      <TextContentStyle>
         <SmallerHeadingMedium title="Curious Frontend Developer" />
         <Paragraph center>
           Problem-solving makes me tick and I love finding ways to make things work better for users. In my past jobs in customer service, I was always the one pushing for smarter ways to do things, and that mindset has followed me into tech. I love the feeling of getting into a flow with code, especially when I'm learning something new or figuring out how to make a feature better.
@@ -32,10 +44,9 @@ const About = () => {
 
           My goal is to move into system-level or application development, where I can work on more complex logic and structures, not just visual interfaces.
         </Paragraph>
-      </AboutTextContent>
+      </TextContentStyle>
     </StyledSection>
 
   )
 }
 
-export default About
