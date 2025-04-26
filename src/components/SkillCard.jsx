@@ -1,11 +1,23 @@
 import { ExtendedTag } from "./Tag"
 import styled from "styled-components"
+import { media } from "../media"
 
 
 const SkillCardStyle = styled.div`
  display: flex;
  flex-direction: column;
  gap: 16px;
+ 
+ @media ${media.tablet} {
+    text-align: center;
+     
+   
+   }
+  @media ${media.desktop} {
+    text-align: left;
+    justify-content: flex-start;
+   
+   }
 
 `
 

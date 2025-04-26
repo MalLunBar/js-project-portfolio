@@ -15,7 +15,8 @@ const TagStyle = styled.span`
 `
 
 const ExtendedTagStyle = styled(TagStyle)`
-  max-width: 177px; 
+  width: 177px; 
+  flex: 0;
 `
 
 export const Tag = ({ theme, label }) => {

@@ -25,7 +25,7 @@ export const CardContent = ({ tags, name, description }) => {
         ))}
       </TagContainerStyle>
       <HeadingMedium title={name} />
-      <Paragraph>{description}</Paragraph>
+      <Paragraph align="left">{description}</Paragraph>
     </CardTextStyle>
 
   )

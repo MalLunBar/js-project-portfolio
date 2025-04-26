@@ -1,28 +1,18 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import { media } from "../media"
 
 const ParagraphStyle = styled.p`
   font-size: 16px;
   font-weight: 400;
+  text-align: ${({ align }) => align || "left"};
+
+  @media ${media.tablet} {
+    text-align: ${({ align }) => align === "left" ? "left" : "center"};
+  
+  }
 `
-const CenteredParagraphStyle = styled(ParagraphStyle)`
-  text-align: center;
-`
 
-export const Paragraph = ({ children }) => {
-  return (
-    <ParagraphStyle>
-      {children}
-    </ParagraphStyle>
-  )
+
+export const Paragraph = ({ children, align }) => {
+  return <ParagraphStyle align={align}>{children}</ParagraphStyle>;
 }
-
-export const CenteredParagraph = ({ text }) => {
-  return (
-    <CenteredParagraphStyle>
-      {text}
-    </CenteredParagraphStyle>
-
-  )
-}
-
-

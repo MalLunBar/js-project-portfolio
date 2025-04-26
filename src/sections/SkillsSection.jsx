@@ -5,11 +5,21 @@ import SkillCard from "../components/SkillCard"
 import styled from "styled-components"
 import { StyledSection } from "./StyledSection"
 import { lightTheme, darkTheme } from "../theme"
+import { media } from "../media"
 
 const SkillStyle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media ${media.tablet} {
+    
+     
+  }
+  @media ${media.desktop} {
+    flex-direction: row;
+     
+  }
 `
 const SkillsSection = () => {
   return (
