@@ -15,7 +15,9 @@ const BlogCardStyle = styled.div`
   @media ${media.tablet} {
     flex-direction: row;
   }
-
+  @media ${media.desktop} {
+    gap: 125px; 
+  }
 `
 const BlogCardTextStyle = styled.div`
   display: flex; 
