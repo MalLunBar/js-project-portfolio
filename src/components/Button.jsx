@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import IconLink from "./IconLink"
+import { useState } from "react";
 
 
 
@@ -23,6 +24,7 @@ const CenteredButtonStyled = styled(ButtonStyled)`
 `
 
 export const Button = ({ icon, label, url, background, text, border }) => {
+
   return (
     <ButtonStyled
       href={url}
@@ -31,10 +33,11 @@ export const Button = ({ icon, label, url, background, text, border }) => {
       $background={background}
       $text={text}
       $border={border}
+      
     >
-      <IconLink 
-        icon={icon} 
-        url={url} 
+      <IconLink
+        icon={icon}
+        url={url}
         background={background} />
       {label}
     </ButtonStyled>
@@ -42,21 +45,39 @@ export const Button = ({ icon, label, url, background, text, border }) => {
 }
 
 export const CenteredButton = ({ icon, label, url, background, text, border }) => {
+
+  const [showBox, setShowBox] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setShowBox(true);
+  }
+
   return (
-    <CenteredButtonStyled
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      $background={background}
-      $text={text}
-      $border={border}
-    >
-      <IconLink 
-        icon={icon} 
-        url={url} 
-        background={background} />
-      {label}
+    <>
+      <CenteredButtonStyled
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        $background={background}
+        $text={text}
+        $border={border}
+        onClick={handleClick}
+      >
+        <IconLink
+          icon={icon}
+          url={url}
+          background={background} />
+        {label}
       </CenteredButtonStyled>
+
+      {showBox && (
+        <div style={{ marginTop: "20px", padding: "10px", backgroundColor: "#eee", borderRadius: "8px" }}>
+          No more projects to show!
+        </div>
+      )}
+    </>
+
   )
 }
 
