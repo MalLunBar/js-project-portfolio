@@ -25,11 +25,12 @@ const BlogCardTextStyle = styled.div`
   gap: 32px; 
 
 `
-const BlogCard = ({ image, tags, name, description, link }) => {
+const BlogCard = ({ image, alt, tags, name, description, link }) => {
   return (
     <BlogCardStyle>
       <BlogImage
         image={image}
+        alt={alt}
       />
       <BlogCardTextStyle>
         <CardTextContent

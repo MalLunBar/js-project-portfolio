@@ -18,8 +18,8 @@ const BlogCardImage = styled.img`
 `
 
 
-export const BlogImage = ({ image }) => {
-  return <BlogCardImage src={image} alt="" />
+export const BlogImage = ({ image, alt }) => {
+  return <BlogCardImage src={image} alt={alt} />
 }
 
 

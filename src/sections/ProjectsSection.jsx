@@ -30,7 +30,7 @@ const ProjectSection = () => {
       })}
       <CenteredButton
         icon="/assets/arrowdown-icon.svg"
-        label="Load More"
+        label="Se More Projects"
         url=""
         background={lightTheme.background}
         text={lightTheme.text}

@@ -13,6 +13,7 @@ const BlogSection = () => {
           <BlogCard
             key={post.name}
             image={post.image}
+            alt={post.alt}
             name={post.name}
             description={post.description}
             tags={post.tags}
