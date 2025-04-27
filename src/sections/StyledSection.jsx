@@ -8,7 +8,7 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  
+  flex: 1;
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
 

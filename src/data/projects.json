@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "This Portfolio",
-      "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
+      "description": "This portfolio is built with React and TypeScript, using Styled Components for styling. It's structured into small, reusable components and focuses on clean code, accessibility, and a responsive design.",
       "image": "assets/purple.webp",
       "tags": [
         "HTML5",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Web Accessebility Quiz",
-      "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
+      "description": "This project is a web accessibility quiz built with semantic HTML, CSS, and JavaScript. It focuses on creating an inclusive and user-friendly experience, with full keyboard navigation, screen reader support, ARIA roles, and WCAG-compliant color contrast.",
       "image": "assets/bus.webp",
       "tags": [
         "HTML5",
@@ -27,7 +27,7 @@
     },
     {
       "name": "Weather app",
-      "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
+      "description": "This project is a responsive weather app built with TypeScript, fetching data from the OpenWeather API. It shows the current weather, temperature, sunrise and sunset times, plus a 4-day forecast, all styled to match a selected design mockup.",
       "image": "assets/rain.webp",
       "tags": [
         "HTML5",
@@ -41,7 +41,7 @@
     },
     {
       "name": "Recipe Library",
-      "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
+      "description": "This project is a dynamic recipe website built with JavaScript, fetching real-time data from the Spoonacular API. It displays recipes in a user-friendly way, handles API limits gracefully, and includes features like filtering, sorting, and local storage caching.",
       "image": "assets/food.webp",
       "tags": [
         "HTML5",
@@ -54,7 +54,7 @@
     },
     {
       "name": "Business Site",
-      "description": "This is a website where data is fetched from an API called Spoonacular where users are able to find recipes they like filter and sort through them with specific criterias.",
+      "description": "This project is a responsive business website built with HTML and CSS, using both Flexbox and CSS Grid for layout. It features a navigation bar, a dynamic grid of content, and adapts smoothly across mobile, tablet, and desktop devices.",
       "image": "assets/business1.webp",
       "tags": [
         "HTML5",

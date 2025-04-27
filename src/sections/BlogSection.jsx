@@ -7,7 +7,7 @@ import BlogCard from "../components/BlogCard";
 const BlogSection = () => {
   return (
     <StyledCardSection>
-      <Heading title="My Words" />
+      <Heading title="My Faves" />
       {posts.posts.map((post) => {
         return (
           <BlogCard
@@ -18,11 +18,8 @@ const BlogSection = () => {
             tags={post.tags}
             link={post.link}
           />
-
         )
       })}
-
-
     </StyledCardSection>
   )
 }

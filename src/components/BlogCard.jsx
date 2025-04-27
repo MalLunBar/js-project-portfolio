@@ -38,7 +38,7 @@ const BlogCard = ({ image, tags, name, description, link }) => {
           description={description} />
         <Button
           icon="./assets/globe-icon.svg"
-          label="Read article"
+          label="Watch Trailer"
           url={link} />
       </BlogCardTextStyle>
     </BlogCardStyle>
