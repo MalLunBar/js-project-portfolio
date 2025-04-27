@@ -2,9 +2,8 @@
 import Heading from "../typography/Heading"
 import { StyledSection } from "./StyledSection"
 import { Paragraph } from "../typography/Paragraphs"
-import { lightTheme, darkTheme } from "../theme"
+import { darkTheme } from "../theme"
 import { TextContentStyle } from "./About"
-
 
 const TechSection = () => {
   return (

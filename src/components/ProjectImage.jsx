@@ -10,10 +10,8 @@ const CardImage = styled.img`
   @media ${media.desktop} {
     width: 479px;
     height: 479px;  
-  }
-   
+  }  
 `
-
 export const ProjectImage = ({ image }) => {
   return <CardImage src={image} alt="" aria-hidden="true" />
 }

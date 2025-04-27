@@ -1,15 +1,12 @@
 import styled from "styled-components"
 import { media } from "../media"
 
-
 const HeadingMedStyled = styled.h3`
   font-size: 24px;
   font-weight: 500;
  
   @media ${media.desktop} {
     font-size: 30px;
-    
-    
   }
 `
 

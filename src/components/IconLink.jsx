@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 
-
 const IconStyled = styled.img`
   width: 32px;
   height: 32px;
@@ -21,7 +20,6 @@ const IconLink = ({ icon, background }) => {
         $background={background} />}
     </>
   )
-
 }
 
 export default IconLink 

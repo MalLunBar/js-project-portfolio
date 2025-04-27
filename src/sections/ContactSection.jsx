@@ -38,12 +38,10 @@ const ParagraphContainer = styled.div`
   width: 270px;
   justify-content: center;
   
-
   @media ${media.tablet} {
     text-align: center;
   }
 `
-
 
 const ContactSection = () => {
   return (
@@ -67,6 +65,5 @@ const ContactSection = () => {
     </StyledSection>
   )
 }
-
 
 export default ContactSection

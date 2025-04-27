@@ -8,8 +8,6 @@ import ContactSection from "./sections/ContactSection"
 
 
 
-
-
 export const App = () => {
   return (
     <>

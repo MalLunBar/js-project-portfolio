@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import { media } from "../media"
 
-
-
 export const StyledSection = styled.section`
   padding: 64px 16px;
   display: flex;
@@ -20,7 +18,6 @@ export const StyledSection = styled.section`
   @media ${media.tablet} {
     padding: 64px 24px;
     align-items: center;
-
   }
 
   @media ${media.desktop} {
@@ -31,10 +28,6 @@ export const StyledSection = styled.section`
 
 export const StyledCardSection = styled(StyledSection)`
   gap: 64px;
-
-  @media ${media.tablet} {
-    
-  }
 
   @media ${media.desktop} {
     gap: 128px;

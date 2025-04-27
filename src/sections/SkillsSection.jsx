@@ -1,4 +1,3 @@
-//tag between skills and text
 import Heading from "../typography/Heading"
 import skills from "../data/skills.json"
 import SkillCard from "../components/SkillCard"
@@ -12,10 +11,6 @@ const SkillStyle = styled.div`
   flex-direction: column;
   gap: 24px;
 
-  @media ${media.tablet} {
-    
-     
-  }
   @media ${media.desktop} {
     flex-direction: row;
      
@@ -38,8 +33,6 @@ const SkillsSection = () => {
         }
         )}
       </SkillStyle>
-
-
     </StyledSection>
   )
 }

@@ -3,11 +3,8 @@ import projects from "../data/projects.json"
 import { ProjectCard } from "../components/ProjectCard"
 import Heading from "../typography/Heading"
 import { StyledCardSection } from "./StyledSection"
-import { lightTheme, darkTheme } from "../theme"
+import { lightTheme } from "../theme"
 import { CenteredButton } from "../components/Button"
-
-
-
 
 const ProjectSection = () => {
   return (
@@ -24,7 +21,6 @@ const ProjectSection = () => {
             netlify={project.netlify}
             github={project.github}
             index={index}
-
           />
         )
       })}
@@ -39,6 +35,5 @@ const ProjectSection = () => {
     </StyledCardSection>
   )
 }
-
 
 export default ProjectSection

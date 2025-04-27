@@ -13,23 +13,19 @@ export const TextContentStyle = styled.div`
   
   @media ${media.tablet} {
     max-width: 696px;
-    
   }
+
   @media ${media.desktop} {
     max-width: 782px;
-    
   }
 `
 const ProfileImage = styled.img`
-  
-
   @media ${media.tablet} {
     max-width: 566px;
     
   }
   @media ${media.desktop} {
     max-width: 982px;
-    
   }
 `
 
@@ -50,7 +46,6 @@ export const About = () => {
         </Paragraph>
       </TextContentStyle>
     </StyledSection>
-
   )
 }
 

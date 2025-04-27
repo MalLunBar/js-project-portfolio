@@ -8,14 +8,12 @@ const ParagraphStyle = styled.p`
 
   @media ${media.tablet} {
     text-align: ${({ align }) => align === "left" ? "left" : "center"};
-  
   }
   
   @media ${media.desktop} {
     font-size: 18px;
   }
 `
-
 
 export const Paragraph = ({ children, align }) => {
   return <ParagraphStyle align={align}>{children}</ParagraphStyle>;

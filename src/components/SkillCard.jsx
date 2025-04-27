@@ -10,17 +10,12 @@ const SkillCardStyle = styled.div`
  
  @media ${media.tablet} {
     text-align: center;
-     
-   
-   }
+  }
   @media ${media.desktop} {
     text-align: left;
     justify-content: flex-start;
-   
-   }
-
+  }
 `
-
 const SkillCard = ({ name, skills, theme }) => {
   return (
     <SkillCardStyle>
