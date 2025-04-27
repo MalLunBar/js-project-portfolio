@@ -7,7 +7,7 @@ import BlogCard from "../components/BlogCard";
 const BlogSection = () => {
   return (
     <StyledCardSection>
-      <Heading title="My Faves" />
+      <Heading title="My Favourite Games" />
       {posts.posts.map((post) => {
         return (
           <BlogCard
