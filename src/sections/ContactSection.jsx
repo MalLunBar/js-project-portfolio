@@ -51,7 +51,7 @@ const ContactSection = () => {
       <Heading title="Let's Talk" />
       <ContactSectionStyle>
         <ImgContainerStyle>
-          <ContactImgStyle src="/assets/contact-pic.webp" alt="" />
+          <ContactImgStyle src="/assets/contact-pic.webp" alt="Profil picture of Malin Lundgren" />
         </ImgContainerStyle>
         <ParagraphContainer>
           <Paragraph center>Malin Lundgren</Paragraph>
