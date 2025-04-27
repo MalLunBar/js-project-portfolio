@@ -15,8 +15,11 @@ const ButtonStyled = styled.a`
   display: flex;
   gap: 16px;
   align-items: center;
-  text-decoration: none;
-  
+  text-decoration: none; 
+`
+
+const CenteredButtonStyled = styled(ButtonStyled)`
+  align-self: center; 
 `
 
 export const Button = ({ icon, label, url, background, text, border }) => {
@@ -35,6 +38,25 @@ export const Button = ({ icon, label, url, background, text, border }) => {
         background={background} />
       {label}
     </ButtonStyled>
+  )
+}
+
+export const CenteredButton = ({ icon, label, url, background, text, border }) => {
+  return (
+    <CenteredButtonStyled
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      $background={background}
+      $text={text}
+      $border={border}
+    >
+      <IconLink 
+        icon={icon} 
+        url={url} 
+        background={background} />
+      {label}
+      </CenteredButtonStyled>
   )
 }
 

@@ -3,8 +3,8 @@ import projects from "../data/projects.json"
 import { ProjectCard } from "../components/ProjectCard"
 import Heading from "../typography/Heading"
 import { StyledCardSection } from "./StyledSection"
-import { lightTheme, darkTheme } from "../theme";
-import { Button } from "../components/Button";
+import { lightTheme, darkTheme } from "../theme"
+import { CenteredButton } from "../components/Button"
 
 
 
@@ -28,7 +28,7 @@ const ProjectSection = () => {
           />
         )
       })}
-      <Button
+      <CenteredButton
         icon="/assets/arrowdown-icon.svg"
         label="Load More"
         url=""

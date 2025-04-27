@@ -8,6 +8,8 @@ import { media } from "../media"
 export const ProjectCardStyle = styled.article`
   display: flex; 
   flex-direction: column; 
+ 
+
   gap: 32px; 
 
   @media ${media.tablet} {
