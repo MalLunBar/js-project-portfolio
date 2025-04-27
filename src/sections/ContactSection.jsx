@@ -37,7 +37,7 @@ const ParagraphContainer = styled.div`
   gap: 8px;
   width: 270px;
   justify-content: center;
-  align-items: flex-start;
+  
 
   @media ${media.tablet} {
     text-align: center;
@@ -54,9 +54,9 @@ const ContactSection = () => {
           <ContactImgStyle src="/assets/contact-pic.webp" alt="" />
         </ImgContainerStyle>
         <ParagraphContainer>
-          <Paragraph>Malin Lundgren</Paragraph>
-          <Paragraph>+46(0)737060052</Paragraph>
-          <Paragraph>malinelundgren1991@gmail.com</Paragraph>
+          <Paragraph center>Malin Lundgren</Paragraph>
+          <Paragraph center>+46(0)737060052</Paragraph>
+          <Paragraph center>malinelundgren1991@gmail.com</Paragraph>
         </ParagraphContainer>
         <IconContainer>
           <IconLink icon="/assets/linkedin-icon.svg" url="https://www.linkedin.com/in/malin-elisabeth-lundgren/" />

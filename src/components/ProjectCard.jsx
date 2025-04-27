@@ -1,5 +1,5 @@
 
-import Button from "./Button"
+import { Button } from "./Button"
 import styled from "styled-components"
 import { ProjectImage } from "./ProjectImage"
 import { CardTextContent } from "./CardTextContent"

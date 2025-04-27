@@ -15,5 +15,5 @@ const CardImage = styled.img`
 `
 
 export const ProjectImage = ({ image }) => {
-  return <CardImage src={image} alt="" />
+  return <CardImage src={image} alt="" aria-hidden="true" />
 }

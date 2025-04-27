@@ -39,7 +39,7 @@ export const About = () => {
     <StyledSection>
       <CenteredHeadingMedium title="Hi There, I'm" />
       <LargeHeading title="Malin Lundgren" />
-      <ProfileImage src="/assets/profile-pic.png" alt="" />
+      <ProfileImage src="/assets/profile-pic.png" alt="Profile picture of Malin Lundgren" />
       <TextContentStyle>
         <SmallerHeadingMedium title="Curious Frontend Developer" />
         <Paragraph center>

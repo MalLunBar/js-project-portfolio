@@ -4,7 +4,7 @@ import skills from "../data/skills.json"
 import SkillCard from "../components/SkillCard"
 import styled from "styled-components"
 import { StyledSection } from "./StyledSection"
-import { lightTheme, darkTheme } from "../theme"
+import { darkTheme } from "../theme"
 import { media } from "../media"
 
 const SkillStyle = styled.div`
