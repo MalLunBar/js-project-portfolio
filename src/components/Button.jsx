@@ -33,7 +33,7 @@ export const Button = ({ icon, label, url, background, text, border }) => {
       $background={background}
       $text={text}
       $border={border}
-      
+
     >
       <IconLink
         icon={icon}
@@ -72,7 +72,7 @@ export const CenteredButton = ({ icon, label, url, background, text, border }) =
       </CenteredButtonStyled>
 
       {showBox && (
-        <div style={{ marginTop: "20px", padding: "10px", backgroundColor: "#eee", borderRadius: "8px" }}>
+        <div style={{ padding: "10px", backgroundColor: "#eee", borderRadius: "12px" }}>
           No more projects to show!
         </div>
       )}
