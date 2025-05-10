@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "Happy Thought Message App ",
+      "description": "Happy Thoughts is a React app that fetches and displays recent public messages from an API. Users can post new thoughts, see “time ago” timestamps (via date-fns), and like posts in real time. It's built with React Hooks (useState, useEffect), Tailwind CSS for styling, Framer Motion for subtle animations, plus client-side validation and error handling.",
+      "image": "assets/message.webp",
+      "tags": [
+        "HTML5",
+        "TailwindCSS",
+        "JavaScript",
+        "React",
+        "APIs"
+      ],
+      "netlify": "https://myhappythought.netlify.app/",
+      "github": "https://github.com/Technigo/js-project-happy-thoughts"
+    },
+    {
       "name": "This Portfolio",
       "description": "This portfolio is built with React and TypeScript, using Styled Components for styling. It's structured into small, reusable components and focuses on clean code, accessibility, and a responsive design.",
       "image": "assets/purple.webp",
