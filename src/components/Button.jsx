@@ -44,17 +44,23 @@ export const Button = ({ icon, label, url, background, text, border }) => {
   )
 }
 
-export const CenteredButton = ({ icon, label, url, background, text, border }) => {
+export const CenteredButton = ({ icon, label, url, background, text, border, onLoadMore, remaining }) => {
 
-  const [showBox, setShowBox] = useState(false);
+  const [showBox, setShowBox] = useState(false)
 
   const handleClick = (e) => {
     e.preventDefault();
-    setShowBox(true);
+    if (remaining > 0) {
+      onLoadMore()
+      setShowBox(false)
+    } else {
+      setShowBox(true);
+    }
   }
 
   return (
     <>
+
       <CenteredButtonStyled
         href={url}
         target="_blank"

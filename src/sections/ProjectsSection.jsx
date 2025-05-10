@@ -5,12 +5,23 @@ import Heading from "../typography/Heading"
 import { StyledCardSection } from "./StyledSection"
 import { lightTheme } from "../theme"
 import { CenteredButton } from "../components/Button"
+import { useState } from "react"
+
+const projectList = projects.projects
 
 const ProjectSection = () => {
+  const [visibleCount, setVisibleCount] = useState(4)
+
+  const handleShowMore = () => {
+    setVisibleCount((c) => Math.min(c + 4, projectList.length))
+  }
+
+  const remaining = projectList.length - visibleCount
+
   return (
     <StyledCardSection>
       <Heading title="Featured Projects" />
-      {projects.projects.map((project, index) => {
+      {projectList.slice(0, visibleCount).map((project, index) => {
         return (
           <ProjectCard
             key={project.name}
@@ -24,13 +35,17 @@ const ProjectSection = () => {
           />
         )
       })}
+
       <CenteredButton
         icon="/assets/arrowdown-icon.svg"
-        label="Se More Projects"
+        label="See More Projects"
         url=""
         background={lightTheme.background}
         text={lightTheme.text}
-        border={`2px solid ${lightTheme.text}`} />
+        border={`2px solid ${lightTheme.text}`}
+        onLoadMore={handleShowMore}
+        remaining={remaining}
+      />
 
     </StyledCardSection>
   )
