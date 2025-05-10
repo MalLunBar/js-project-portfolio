@@ -14,6 +14,7 @@ const SkillCardStyle = styled.div`
   @media ${media.desktop} {
     text-align: left;
     justify-content: flex-start;
+    font-size: 18px;
   }
 `
 const SkillCard = ({ name, skills, theme }) => {
