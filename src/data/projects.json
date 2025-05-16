@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "Movie Explorer App",
+      "description": "Flicksplosion is a React SPA that uses React Router to switch between a TMDB-powered movie list and a detailed view. It manages fetching, loading spinners, and “not found” states with React Hooks (useState/useEffect), styles everything responsively with Tailwind CSS, overlays backdrops with a dark gradient, and navigates via <Link>, all while keeping your API key safely in an env var.",
+      "image": "assets/movie.webp",
+      "tags": [
+        "HTML5",
+        "TailwindCSS",
+        "JavaScript",
+        "React",
+        "APIs"
+      ],
+      "netlify": "https://flicksplosion.netlify.app/",
+      "github": "https://github.com/MalLunBar/js-project-movies"
+    },
+    {
       "name": "Happy Thought Message App ",
       "description": "Happy Thoughts is a React app that fetches and displays recent public messages from an API. Users can post new thoughts, see “time ago” timestamps (via date-fns), and like posts in real time. It's built with React Hooks (useState, useEffect), Tailwind CSS for styling, Framer Motion for subtle animations, plus client-side validation and error handling.",
       "image": "assets/message.webp",
